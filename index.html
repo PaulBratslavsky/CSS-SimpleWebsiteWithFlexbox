@@ -12,7 +12,7 @@
   <link rel="stylesheet" media="screen and (min-width: 1100px)" href="./css/widescreen.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-  <script src="./js/index.js"></script>
+
 </head>
 <body id="home" >
   <!-- Navbar Start -->
@@ -24,8 +24,8 @@
     </h1>
     <ul class="nav-bar__items">
       <li class="nav-bar__item"><a href="#home">Home</a></li>
-      <li class="nav-bar__item"><a href="#who">Who</a></li>
       <li class="nav-bar__item"><a href="#what">What</a></li>
+      <li class="nav-bar__item"><a href="#who">Who</a></li>
       <li class="nav-bar__item"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -35,7 +35,7 @@
   <header class="showcase">
     <div class="showcase__content">
       <h1 class="showcase__heading lg-heading">
-        The Sky Is The Limit
+        The <span class="text-primary">Sky</span> Is The Limit
       </h1>
       <p class="showcase__text lead">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, minus. Unde corporis sequi atque in, consequatur eius eum ratione accusamus!
@@ -43,6 +43,138 @@
       <a href="#" class="showcase__link btn">Read More</a>
     </div>
   </header>
-  <!-- Header Showcase Start -->
+  <!-- Header Showcase End -->
+
+  <!-- Section What We Do Start -->
+  <section id="what" class="whatwedo y-padding-3">
+    <div class="container">
+      <h2 class="whatwedo__heading md-heading text-secondary text-centered">
+          <span class="text-primary">What </span> We Do
+      </h2>
+      <div class="whatwedo__items">
+
+        <div class="whatwedo__item">
+          <i class="fas fa-university lg-icons"></i>
+          <div class="whatwedo__content">
+            <h3 class="whatwedo__heading">Investment Banking</h3>
+            <p class="whatwedo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis eius molestiae ratione a?</p>
+          </div>
+        </div>
+
+        <div class="whatwedo__item">
+            <i class="fas fa-book-reader lg-icons"></i>
+            <div class="whatwedo__content">
+              <h3 class="whatwedo__heading">Portfolio Management</h3>
+              <p class="whatwedo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis eius molestiae ratione a?</p>
+            </div>
+          </div>
+
+          <div class="whatwedo__item">
+              <i class="fas fa-pencil-alt lg-icons"></i>
+              <div class="whatwedo__content">
+                <h3 class="whatwedo__heading ">Tax & Custodial</h3>
+                <p class="whatwedo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis eius molestiae ratione a?</p>
+              </div>
+            </div>
+        
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Section What We Do End -->
+
+  <!-- Section Who We Are Start -->
+
+  <section id="who" class="whoweare">
+    <div class="whoweare__img">hello</div>
+    <div class="whoweare__text">
+      <h2 class="md-heading"><span class="text-primary">Who</span> We Are</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum deleniti voluptatem fugiat quod incidunt rerum hic, nemo, accusamus, ipsam numquam eaque aliquam architecto autem dicta repellat iure. Nam, necessitatibus officiis.</p>
+
+      <h3>Our Team</h3>
+      <ul class="whoweare__items">
+        <li class="whoweare__item">Paul: CEO</li>
+        <li class="whoweare__item">Ariya: CFO</li>
+        <li class="whoweare__item">Acha: Account Manager</li>
+        <li class="whoweare__item">Birdy: Investment Manager</li>
+        <li class="whoweare__item">Kitty: Sales Manager</li>
+
+        <li class="whoweare__item">Bob "The Cleaner" Security</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section Who We Are End -->
+
+  <!-- Section Clients Start -->
+    <section id="clients" class="clients y-padding-3">
+      <div class="container">
+          <h2 class="md-heading text-centered"><span class="text-primary">Our</span> Clients</h2>
+          <div class="items">
+            <div><img src="./img/logos/logo1.png" alt="Logo 1"></div>
+            <div><img src="./img/logos/logo2.png" alt="Logo 1"></div>
+            <div><img src="./img/logos/logo3.png" alt="Logo 1"></div>
+            <div><img src="./img/logos/logo4.png" alt="Logo 1"></div>
+            <div><img src="./img/logos/logo5.png" alt="Logo 1"></div>
+          </div>
+
+      </div>
+    </section>
+  <!-- Section Clients End -->
+
+  <!-- Section Contacts Start -->
+
+    <section id="contact" class="contact">
+      <div class="contact__form contact__item bg-primary y-padding-3">
+        <div class="contact__text">
+          <h2 class="md-heading">Contact Us</h2>
+          <p>Please use the form below to contact us</p>
+        </div>
+          
+          <form>
+            <div class="form__group">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name...">
+            </div>
+
+            <div class="form__group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email...">
+            </div>
+
+            <div class="form__group">
+              <label for="phone">Phone:</label>
+              <input type="text" name="phone" id="phone" placeholder="Enter your phone...">
+            </div>
+
+            <div class="form__group">
+              <label for="message">Message:</label>
+              <textarea name="name" id="message" placeholder="Enter your message..."></textarea>
+            </div>
+
+            <div class="form__group">
+                <input class="btn btn-dark" type="submit" value="Submit">
+            </div>
+            
+          </form>
+      </div>
+      <div id="map" class="contact__map contact__item"></div>
+    </section>
+
+  <!-- Section Contacts End -->
+
+
+  <!-- Section Footer Start -->
+
+    <footer id="main-footer" class="bg-dark text-centered">
+      <p>Copyright &copy; 2019 | <span class="text-primary">Paul </span>Bratslavsky</p>
+    </footer>
+
+  <!-- Section Footer End -->
+  <script src="./js/index.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-xPgu8p0hfWpqDtg-JUCXi2gKVf2OJh0&callback=initMap"></script>
+
 </body>
 </html>
