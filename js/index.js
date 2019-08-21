@@ -16,5 +16,28 @@ function initMap() {
   const marker = new google.maps.Marker({ position: local,
   map: map });
 }
+// VANILA JS OPACITY NAVBAR ON SCROL
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 100 ) {
+    this.document.querySelector('#navbar').style.opacity = 0.9;    
+  } else {
+    this.document.querySelector('#navbar').style.opacity = 1;    
+  }
+});
 
-console.log(map);
+
+// JQUERY SMOOTH SCROLLING
+$('#navbar a, .btn').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 54
+      }, 800
+    );
+  }
+})
+
+

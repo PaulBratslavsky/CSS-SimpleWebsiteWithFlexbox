@@ -1,0 +1,51 @@
+.whatwedo__item {
+  display: flex;
+  text-align: left;
+  align-items: flex-end;
+
+}
+
+.whatwedo__item i {
+  margin: 1rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.whatwedo__heading {
+  margin-bottom: 0.5rem;
+}
+
+.whatwedo__text {
+  margin: 0.5rem 0;
+}
+
+/* Smart phones */
+@media (max-width: 500px) {
+
+  .nav-bar .container-flex {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .nav-bar__items {
+    margin-top: 0.5rem;
+  }
+
+  .nav-bar__item a {
+    height: 35px;
+  }
+
+  .showcase {
+    height: calc(100vh - 106px);
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+}
+
+@media (min-height: 568px) {
+  .showcase__heading {
+    font-size: 2.4rem;
+  }
+}

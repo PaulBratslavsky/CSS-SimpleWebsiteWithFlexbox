@@ -1,0 +1,25 @@
+.whatwedo__item {
+  display: flex;
+  text-align: left;
+  align-items: flex-end;
+
+}
+
+.whatwedo__item i {
+  margin: 1rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.whatwedo__heading {
+  margin-bottom: 0.5rem;
+}
+
+.whatwedo__text {
+  margin: 0.5rem 0;
+}
+
+
+.contact__map {
+  flex: 2rem;
+}

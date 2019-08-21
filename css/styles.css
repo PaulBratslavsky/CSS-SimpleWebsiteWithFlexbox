@@ -40,6 +40,11 @@ p {
   overflow: hidden;
 }
 
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* Utility Classes      */
 
 .lg-icons {
@@ -109,18 +114,20 @@ p {
   color: #FBFBFB;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 /* Navbar Styles        */
 .nav-bar {
   position: sticky;
   top: 0;
   padding: 0 1rem;
-  height: 55px;
+  min-height: 55px;
   background: #333333;
   color: #FBFBFB;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   z-index: 300;
 }
@@ -287,6 +294,7 @@ p {
 
 .contact__form form .form__group {
   margin: 0.7rem;
+  flex: 1;
 }
 
 .contact__form form .form__group label {
